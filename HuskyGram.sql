@@ -98,11 +98,16 @@ VALUES (987, 'happyDOG.com', 123, NOW()),
 
 INSERT INTO tags(id, tag_name, created_at)
 VALUES (001, 'BU', NOW()),
-(002, 'NEU', NOW());
+(002, 'NEU', NOW()),
+(003, 'SAD', NOW());
+
 
 INSERT INTO photo_tags(photo_id, tag_id)
 VALUES (987, 001),
-(987, 002);
+(987, 002),
+(789, 002),
+(789, 001);
+
 
 INSERT INTO likes(created_at, user_id, photo_id)
 VALUES (NOW(), 123, 987),
